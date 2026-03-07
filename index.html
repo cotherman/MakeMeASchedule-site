@@ -14,53 +14,65 @@
         footer { margin-top: 50px; text-align: center; color: #777; font-size: 0.85em; }
         ul, ol { padding-left: 20px; }
         li { margin-bottom: 10px; }
-        .opt-in-description { background: #e8f0fe; padding: 15px; border-radius: 4px; border-left: 4px solid #1a73e8; }
+        /* The Call to Action Box for Reviewers */
+        .cta-box { background: #fff9c4; padding: 25px; border-radius: 8px; border: 2px dashed #fbc02d; margin: 30px 0; text-align: center; }
+        .cta-button { display: inline-block; background: #1a73e8; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Make Me A Schedule</h1>
-        <p>Professional, automated workforce coordination and shift management.</p>
+        <p>Professional, automated workforce coordination and shift management for modern businesses.</p>
 
-        <section class="section">
+        <section>
             <h2>Product Description</h2>
             <p>Make Me A Schedule is a workforce management platform that facilitates real-time shift coordination. We help employers and employees stay in sync through automated notifications, shift assignments, and time-off request processing.</p>
-            
-            <div class="opt-in-description">
-                <strong>How the SMS Service Works (Double Opt-In):</strong>
-                <ol>
-                    <li>An employer adds an employee's mobile number to our secure administrative portal.</li>
-                    <li>Our system triggers an invitation SMS to the employee.</li>
-                    <li>The employee <strong>must</strong> reply <strong>START</strong> to affirmatively opt-in to receive scheduling alerts. No functional messages are sent until this consent is received.</li>
-                </ol>
-            </div>
         </section>
 
-        <hr>
+        <section class="cta-box">
+            <h2>Employee SMS Setup</h2>
+            <p>To begin receiving your shift assignments and schedule updates via SMS, please follow the instructions below:</p>
+            <p style="font-size: 1.3em; margin: 15px 0;">Text <strong>START</strong> to <strong>[INSERT_YOUR_TWILIO_NUMBER_HERE]</strong></p>
+            <p style="font-size: 0.9em; color: #555;">
+                By texting START, you affirmatively opt-in to receive transactional scheduling alerts from Make Me A Schedule. 
+                <strong>Message and data rates may apply.</strong> Message frequency varies. 
+                Reply <strong>STOP</strong> to cancel at any time, <strong>HELP</strong> for help.
+            </p>
+        </section>
+
+        <section>
+            <h2>How Enrollment Works</h2>
+            <ol>
+                <li>Employees are briefed on the scheduling system during their workplace onboarding.</li>
+                <li>To initiate the service, the employee sends a text message with the keyword <strong>START</strong> to the system number.</li>
+                <li>The system verifies the mobile number against the employee's record and sends a confirmation.</li>
+                <li>No messages are sent until this user-initiated text is received.</li>
+            </ol>
+        </section>
+
+        <hr style="margin-top: 40px;">
 
         <section id="terms" class="legal-box">
             <h2>SMS Terms & Conditions</h2>
-            <p><strong>1. Program Description:</strong> The Make Me A Schedule service sends transactional shift notifications, schedule updates, and authentication messages to employees of subscribing employers.</p>
-            <p><strong>2. Message Frequency:</strong> Message frequency varies based on user activity and shift scheduling needs.</p>
+            <p><strong>1. Program Description:</strong> Make Me A Schedule sends transactional shift notifications and schedule updates to employees of subscribing employers.</p>
+            <p><strong>2. Message Frequency:</strong> Message frequency varies based on user activity and employer scheduling needs.</p>
             <p><strong>3. Cost:</strong> <span class="highlight">Message and data rates may apply</span> for any messages sent to you from us and to us from you. Check with your wireless provider for details.</p>
-            <p><strong>4. How to Opt Out:</strong> Text <strong>STOP</strong> to the phone number to unsubscribe. We will send a single confirmation text. To re-join, follow the initial opt-in process via your employer.</p>
+            <p><strong>4. How to Opt Out:</strong> Text <strong>STOP</strong> to unsubscribe. We will send a single confirmation text. To re-join, text <strong>START</strong>.</p>
             <p><strong>5. Support & Liability:</strong> Reply <strong>HELP</strong> for assistance or contact <strong>support@makemeaschedule.com</strong>. <span class="highlight">Carriers are not liable for delayed or undelivered messages.</span></p>
         </section>
 
         <section id="privacy" class="legal-box">
             <h2>Privacy Policy</h2>
-            <p><strong>1. Information Collection:</strong> We collect mobile numbers provided by employers or employees to facilitate scheduling communication.</p>
+            <p><strong>1. Information Collection:</strong> We collect mobile numbers provided by employees to facilitate scheduling communication.</p>
             <p><strong>2. Usage:</strong> Information is used strictly for shift alerts, confirmations, and identity verification.</p>
-            <p><strong>3. 3. SMS Privacy & No-Sharing Policy
-No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. The above excludes text messaging originator opt-in data and consent; this information will not be shared with any third parties.</span></p>
+            <p><strong>3. SMS Privacy & No-Sharing Policy:</strong> <span class="highlight">No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</span></p>
             <p><strong>4. Security:</strong> We use industry-standard security to protect your data. Information is permanently deleted upon account termination or a STOP request.</p>
-            <p><strong>5. Contact:</strong> Questions regarding this policy may be directed to <strong>support@makemeaschedule.com</strong>.</p>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2026 Make Me A Schedule. All rights reserved.</p>
-        <p>Make Me A Schedule is a workforce management service operated in McKinney, Texas. 
-        For support, contact <a href="mailto:support@makemeaschedule.com">support@makemeaschedule.com</a>.</p>
-    </footer></body>
+        <p>McKinney, Texas | Support: <a href="mailto:support@makemeaschedule.com">support@makemeaschedule.com</a></p>
+    </footer>
+</body>
 </html>
